@@ -1,0 +1,676 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c08a16;
+  border-radius: 10px;
+}
+
+#tornaSu {
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: #c08a16; 
+  color: white;
+  cursor: pointer; 
+  padding: 10px 20px; 
+  border-radius: 20px; 
+  font-size: 18px; 
+}
+
+#tornaSu:hover {
+  background-color: #555; 
+}
+
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.5)), url(./img/img\ bella.jpg);
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0% 10%;
+}
+
+nav ul {
+  text-align: right;
+  flex: 1;
+
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 16px 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+nav ul li a:hover {
+  color: #c08a16;
+}
+
+nav ul li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #c08a16;
+  transition: .5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.home {
+  color: #c08a16;
+}
+
+.home::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #c08a16;
+}
+
+nav img {
+  width: 140px;
+  height: auto;
+  cursor: pointer;
+  filter: contrast(150%);
+}
+
+.button {
+  display: inline-block;
+  background: #c08a16;
+  color: #fff;
+  padding: 10px 20px;
+  font-family: 'Philosopher', sans-serif;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  margin-top: 20px;
+  border-radius: 5px;
+  transition: .5s;
+}
+
+.button:hover {
+  background: #fff;
+  color: #c08a16;
+}
+
+.head {
+  color: #fff;
+  margin-top: 8%;
+  margin-left: 6%;
+}
+
+.h1Animation {
+  font-weight: 700;
+  font-family: 'Philosopher', sans-serif;
+  margin-top: 20px;
+  font-size: 36px;
+  color: #c08a16;
+}
+
+.head h3 {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: 'Philosopher', sans-serif;
+  margin-top: 20px;
+}
+
+.head p {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: 'Philosopher', sans-serif;
+  margin-top: 40px;
+  width: 40%;
+  line-height: 40px;
+}
+
+.head .frase {
+  font-style: italic;
+}
+
+.head button {
+  background: #c08a16;
+  color: #fff;
+  padding: 10px 20px;
+  font-family: 'Philosopher', sans-serif;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  margin-top: 20px;
+  border-radius: 5px;
+  transition: .5s;
+}
+
+.head .foto {
+  position: absolute;
+  top: 20%;
+  right: 14%;
+  width: 30%;
+  height: 60%;
+  border-radius: 50%;
+}
+
+.servizi {
+  width: 100%;
+  height: max-content;
+
+}
+
+.servizi h2 {
+  color: #c08a16;
+  font-size: 54px;
+  font-weight: 700;
+  font-family: 'Philosopher', sans-serif;
+  margin-top: 40px;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgb(30, 29, 29);
+}
+
+.servizi h3 {
+  color: #c08a16;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: 'Philosopher', sans-serif;
+  margin-top: 40px;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgb(30, 29, 29);
+}
+
+.servizi .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin: 50px;
+}
+
+.servizi .container .box {
+  background: #dad7d7;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.servizi .container .box:hover {
+  transform: translateY(-20px);
+  transition: .5s;
+}
+
+.servizi .container .box img {
+  width: 90%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.servizi .container .box h2 {
+  color: #c08a16;
+  font-size: 26px;
+  font-weight: 700;
+  font-family: 'Philosopher', sans-serif;
+  margin-top: 10px;
+  text-shadow: 2px 2px 5px rgb(247, 243, 243);
+}
+
+.servizi .container .box p {
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Philosopher', sans-serif;
+  padding: 20px;
+}
+
+.containerGalleria {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #111;
+  margin-top: 280px;
+
+}
+
+.containerGalleria h2 {
+  color: #c08a16;
+  font-size: 54px;
+  font-weight: 700;
+  font-family: 'Philosopher', sans-serif;
+  margin: 40px;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgb(30, 29, 29);
+}
+
+.containerGalleria h3 {
+  color: #c08a16;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: 'Philosopher', sans-serif;
+  text-align: center;
+  margin: 20px;
+  text-shadow: 2px 2px 2px rgb(30, 29, 29);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+  margin: 50px;
+
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.about {
+  width: 100%;
+  height: 85vh;
+}
+
+.about h2 {
+  color: #c08a16;
+  font-size: 54px;
+  font-weight: 700;
+  font-family: 'Philosopher', sans-serif;
+  margin-top: 40px;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgb(30, 29, 29);
+}
+
+.about h3 {
+  color: #c08a16;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: 'Philosopher', sans-serif;
+  margin-top: 40px;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgb(30, 29, 29);
+}
+
+.aboutContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+
+.aboutText {
+  flex: 1;
+}
+
+.about .aboutText p {
+  color: #333;
+  font-size: 26px;
+  font-weight: 500;
+  font-family: 'Philosopher', sans-serif;
+  padding: 20px;
+  line-height: 36px;
+}
+
+.about .aboutVideo {
+  flex: 1;
+  background-color: #dad7d7;
+  padding: 30px;
+  border-radius: 18px;
+}
+
+.about .aboutVideo video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+footer {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1));
+  color: #c08a16;
+  padding: 100px 0 30px;
+  border-top-left-radius: 300px;
+  font-size: 20px;
+}
+
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col {
+  flex-basis: 20%;
+  padding: 10px;
+}
+
+.logo {
+  width: 180px;
+}
+
+.col h3 {
+  font-size: 28px;
+  font-weight: 800;
+  font-family: 'Philosopher', sans-serif;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 2px rgb(30, 29, 29);
+}
+
+.col p {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Philosopher', sans-serif;
+  line-height: 30px;
+}
+
+.email-id {
+  width: fit-content;
+  border-bottom: 1px solid #c08a16;
+  cursor: pointer;
+}
+
+.col a {
+  color: #c08a16;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Philosopher', sans-serif;
+  text-decoration: none;
+}
+
+
+
+.social-links a {
+  color: #c08a16;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Philosopher', sans-serif;
+  text-decoration: none;
+}
+
+.social-links i {
+  margin: 0 10px;
+}
+
+.underline{
+  width: 80%;
+  height:5px; 
+  background-color: #767676;
+  border-radius: 3px;
+
+}
+
+.underline span{
+  width: 50px;
+  height: 5px;
+  background-color: #c08a16;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+
+/*  media query smartphone */
+
+ @media screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0% 10%;
+  }
+
+  nav ul {
+    text-align: right;
+    flex: 1;
+  }
+
+  nav ul li {
+    display: inline-block;
+    padding: 16px 30px;
+  }
+
+  .header {
+    height: max-content;
+    position: relative;
+  }
+
+  .head p{
+    height: 200px;
+    width: 90%;
+    overflow: auto;
+   padding: 10px;
+  }
+
+  .container{
+    display: flex;
+    width: auto;
+  }
+
+
+  .foto{
+    display: none;
+  }
+
+  .head .button{
+   margin-top: 100px;
+  }
+  
+
+  .servizi {
+    width: 100%;
+    height: max-content;
+  }
+
+  .servizi .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    margin: 50px;
+  }
+
+  .about {
+    width: 100%;
+    height: max-content;
+  }
+
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+  }
+
+   .aboutText p {
+   overflow: auto;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+.social-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+ }
+
+/*  media query tablet */
+
+@media screen and (max-width: 1024px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0% 10%;
+  }
+
+  nav ul {
+    text-align: right;
+    flex: 1;
+  }
+
+  nav ul li {
+    display: inline-block;
+    padding: 16px 30px;
+  }
+
+  .head p{
+    height: 200px;
+    width: 100%;
+    overflow: auto;
+  }
+
+  .foto{
+    display: none;
+  }
+
+  .head .button{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+  }
+
+  .servizi {
+    width: 100%;
+    height: max-content;
+  }
+
+  .servizi .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    margin: 50px;
+  }
+
+  .about {
+    width: 100%;
+    height: max-content;
+  }
+
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+  }
+
+   .aboutText p {
+   overflow: auto;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+.social-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+}
+
+/*  media query desktop */
+
+@media screen and (min-width: 1024px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0% 10%;
+  }
+
+  nav ul {
+    text-align: right;
+    flex: 1;
+  }
+
+  nav ul li {
+    display: inline-block;
+    padding: 16px 30px;
+  }
+
+  .head p{
+    height: 180px;
+    overflow: auto;
+  }
+
+  .foto{
+   margin-top: 40px;
+    position: absolute;
+    top: 20%;
+    right: 14%;
+    width: 30%;
+    height: 60%;
+    border-radius: 50%
+  }
+
+  .head .button{
+    position: absolute;
+    top: 85%;
+    left: 30%;
+  }
+
+  .servizi {
+    width: 100%;
+    height: max-content;
+  }
+
+  .servizi .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 80px;
+  }
+
+  .about {
+    width: 100%;
+    height: max-content;
+  }
+
+ 
+}
